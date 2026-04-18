@@ -269,27 +269,6 @@ def main(page: ft.Page):
         ], expand=True)
     )
 
-    """def process_log_queue():
-        updated = False
-
-        while not log_queue.empty():
-            text = log_queue.get()
-            log_box.value += f"{text}\n"
-            updated = True
-
-        if updated:
-            page.update()
-
-    def start_log_updater():
-        def loop():
-            while True:
-                time.sleep(0.2)  # adjust for responsiveness vs CPU
-                process_log_queue()
-
-        threading.Thread(target=loop, daemon=True).start()
-
-    start_log_updater()"""
-
     page.update()
 
 
